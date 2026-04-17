@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalacja PyChess
-RUN pip install --no-cache-dir pychess
+RUN pip install -r requirements.txt
 
 # Ustawienie zmiennej środowiskowej dla X11
 ENV DISPLAY=:0
